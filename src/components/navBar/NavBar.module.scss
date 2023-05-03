@@ -1,0 +1,18 @@
+/* Desktop size 1440*1024 */
+.navbar_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 300px;
+  height: 100vh;
+  background-color: var(--color-primary-main);
+  padding-top: 233px;
+
+  .menu_container {
+    .name_container {
+      color: var(--color-white);
+    }
+  }
+  
+}
