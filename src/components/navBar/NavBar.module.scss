@@ -10,8 +10,26 @@
   padding-top: 233px;
 
   .menu_container {
-    .name_container {
-      color: var(--color-white);
+    margin: 0 25px;
+
+    // .name_container {
+
+    // }
+    .menu_item_container {
+      margin-top: 86px;
+
+      display: grid;
+      grid-auto-flow: row;
+      gap: 50px;
+
+      .menu_item:hover {
+       cursor: pointer;
+      }
+
+      .menu_item_selected {
+        background-color: var(--color-primary-lighter-trans);
+        border-bottom: 1px var(--color-primary-lightest) solid;
+      }
     }
   }
   

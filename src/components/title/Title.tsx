@@ -5,12 +5,17 @@ interface TitleProps {
   text: string;
   fontSize: string;
   fontWeight: string;
+  color: string;
 }
 
 const Title: React.FC<TitleProps> = (props) => {
-  const { text, fontSize, fontWeight } = props;
+  const { text, fontSize, fontWeight, color } = props;
   return (
-    <div className={`${classes[fontSize]} ${classes[fontWeight]}`}>{text}</div>
+    <div
+      className={`${classes[fontSize]} ${classes[fontWeight]} ${classes[color]}`}
+    >
+      {text}
+    </div>
   );
 };
 

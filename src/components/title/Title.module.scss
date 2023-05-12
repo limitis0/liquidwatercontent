@@ -1,3 +1,4 @@
+/* font size */
 .small {
   font-size: 24px;
   line-height: 32px;
@@ -13,10 +14,28 @@
   line-height: 96px;
 }
 
+/* font weight */
 .regular {
   font-weight: 400;
 }
 
 .bold {
   font-weight: 600;
+}
+
+/* font color */
+.dark {
+  color: var(--color-black);
+}
+
+.lighter {
+  color: var(--color-primary-lighter);
+}
+
+.lightest {
+  color: var(--color-primary-lightest);
+}
+
+.white {
+  color: var(--color-white);
 }
