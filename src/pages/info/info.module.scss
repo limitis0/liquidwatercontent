@@ -1,0 +1,27 @@
+.info_container {
+  margin-left: 366px;
+  padding-right: 99px;
+    // height: 100vh;
+  // background-color: aqua;
+
+  .section1_container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    gap: 105px;
+
+
+    height: 400px;
+    // background-color: beige;
+
+    .section1_img {
+      display: block;
+      width: 477px;
+      height: 308px;
+      border: 10px solid #8E936D;
+
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+}

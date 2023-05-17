@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./Title.module.scss";
+import classes from "./Content.module.scss";
 
-interface TitleProps {
+interface ContentProps {
   text: string;
   fontSize: string;
   fontWeight: string;
@@ -9,7 +9,7 @@ interface TitleProps {
   textAlign?: string;
 }
 
-const Title: React.FC<TitleProps> = (props) => {
+const Content: React.FC<ContentProps> = (props) => {
   const { text, fontSize, fontWeight, color, textAlign } = props;
   return (
     <div
@@ -22,4 +22,4 @@ const Title: React.FC<TitleProps> = (props) => {
   );
 };
 
-export default Title;
+export default Content;
