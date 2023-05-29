@@ -9,6 +9,7 @@ import Content from "../../components/content/Content";
 interface InfoProps {}
 
 const Info: React.FC<InfoProps> = () => {
+  // page content (text)
   const [model, setModel] = useState({} as InfoContent);
 
   useEffect(() => {
@@ -39,6 +40,61 @@ const Info: React.FC<InfoProps> = () => {
           alt="profile pic"
         />
       </div>
+
+      {model.section2 && model.section3 && model.section4 && (
+        <div className={classes.section_others_container}>
+          <div className={classes.section_other_container}>
+            <Title
+              text={model.section2.title}
+              fontSize="small"
+              fontWeight="bold"
+              color="dark"
+              textAlign="start"
+            />
+            <Content
+              text={model.section2.content}
+              color="dark"
+              fontWeight="regular"
+              fontSize="medium"
+              textAlign="start"
+            />
+          </div>
+
+          <div className={classes.section_other_container}>
+            <Title
+              text={model.section3.title}
+              fontSize="small"
+              fontWeight="bold"
+              color="dark"
+              textAlign="start"
+            />
+            <Content
+              text={model.section3.content}
+              color="dark"
+              fontWeight="regular"
+              fontSize="medium"
+              textAlign="start"
+            />
+          </div>
+
+          <div className={classes.section_other_container}>
+            <Title
+              text={model.section4.title}
+              fontSize="small"
+              fontWeight="bold"
+              color="dark"
+              textAlign="start"
+            />
+            <Content
+              text={model.section3.content}
+              color="dark"
+              fontWeight="regular"
+              fontSize="medium"
+              textAlign="start"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

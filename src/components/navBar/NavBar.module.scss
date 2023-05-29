@@ -7,14 +7,12 @@
   width: 300px;
   height: 100vh;
   background-color: var(--color-primary-main);
-  padding-top: 233px;
+  // padding-top: 233px;
 
   .menu_container {
-    margin: 0 25px;
+    margin: 233px 25px auto 25px;
 
-    // .name_container {
-
-    // }
+    
     .menu_item_container {
       margin-top: 86px;
 
@@ -32,5 +30,28 @@
       }
     }
   }
-  
+
+  .contact_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 121px;
+
+    .email_icon_container {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+
+      border: var(--color-primary-lightest) 1px solid;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .email_icon {
+        color: var(--color-primary-lightest);
+        width: 12px;
+      }
+    }
+  }
 }

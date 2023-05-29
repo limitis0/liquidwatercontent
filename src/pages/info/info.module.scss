@@ -1,8 +1,9 @@
 .info_container {
   margin-left: 366px;
   padding-right: 99px;
-    // height: 100vh;
-  // background-color: aqua;
+  padding-bottom: 36px;
+  display: grid;
+  gap: 94px;
 
   .section1_container {
     display: grid;
@@ -12,16 +13,26 @@
 
 
     height: 400px;
-    // background-color: beige;
 
     .section1_img {
       display: block;
       width: 477px;
       height: 308px;
-      border: 10px solid #8E936D;
+      border: 10px solid var(--color-primary-main);
 
       object-fit: cover;
       object-position: center center;
+    }
+  }
+
+  .section_others_container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+
+    .section_other_container {
+      display: grid;
+      gap: 16px;
     }
   }
 }

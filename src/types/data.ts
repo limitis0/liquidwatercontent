@@ -10,4 +10,8 @@ export interface InfoContent {
     title: string;
     content: string;
   };
+  section4: {
+    title: string;
+    content: string;
+  };
 }

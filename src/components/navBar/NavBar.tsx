@@ -2,6 +2,8 @@ import React from "react";
 import classes from "./NavBar.module.scss";
 import Title from "../title/Title";
 import { useNavigate } from "react-router-dom";
+import Content from "../content/Content";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 interface NavBarProps {
   selected: string;
@@ -60,6 +62,18 @@ const NavBar: React.FC<NavBarProps> = (props) => {
             />
           </div>
         </div>
+      </div>
+      <div className={classes.contact_container}>
+        <div className={classes.email_icon_container}>
+          <EmailOutlinedIcon className={classes.email_icon} />
+        </div>
+        <Content
+          text="Email: liquidwatercontent@gmail.com"
+          fontSize="small"
+          fontWeight="regular"
+          color="white"
+          textAlign="start"
+        />
       </div>
     </div>
   );
