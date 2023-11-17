@@ -1,4 +1,35 @@
 .pdf_viewer {
-  display: flex;
-  padding-bottom: 36px;
+  .pdf_container{
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    padding-bottom: 36px;
+    justify-content: start;
+
+    .btn_container {
+      color: var(--color-primary-lightest);
+      display: flex;
+      width: 188px;
+      padding: 12px 20px 12px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      background-color: var(--color-primary-main);
+      border-radius: 100px;
+    }
+    .google_pdf_frame {
+      width: fit-content;
+    }
+  }  
+}
+
+@media screen and (max-width: 900px) {
+  .pdf_viewer {
+    .pdf_container {
+    align-items: center;
+  }
+    .google_pdf_frame {
+      width: 9vw;
+    }
+  }
 }

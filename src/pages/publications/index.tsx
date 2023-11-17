@@ -42,6 +42,7 @@ const Publications: React.FC<PublicationsProps> = () => {
       {model[0].month ? (
         model.map((data) => (
           <Timeline
+            key={`${data.year}${data.title}`}
             year={data.year}
             month={monthNumAdjust(data.month)}
             title={data.title}

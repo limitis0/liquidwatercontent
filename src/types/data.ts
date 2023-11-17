@@ -22,3 +22,8 @@ export interface PublicationContent {
   title: string;
   abstract: string;
 }
+
+export interface CvContent {
+  cvIframe: string;
+  cvLink: string;
+}
