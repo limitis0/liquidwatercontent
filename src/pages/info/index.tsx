@@ -17,7 +17,27 @@ const Info: React.FC<InfoProps> = () => {
       const res = await getInfoContent();
       console.log({ res });
 
-      setModel(res);
+      const arrangedRes = {
+        section1: {
+          content: res[0].INFO_ABSTRACT,
+        },
+        section2: {
+          title: res[0].INFO_TITLE_1,
+          content: res[0].INFO_CONTENT_1,
+        },
+        section3: {
+          title: res[0].INFO_TITLE_2,
+          content: res[0].INFO_CONTENT_2,
+        },
+        section4: {
+          title: res[0].INFO_TITLE_3,
+          content: res[0].INFO_CONTENT_3,
+        },
+      };
+
+      console.log({ arrangedRes });
+
+      setModel(arrangedRes);
     };
 
     infoContent();
@@ -31,7 +51,7 @@ const Info: React.FC<InfoProps> = () => {
             color="dark"
             fontWeight="regular"
             fontSize="medium"
-            textAlign="start"
+            textAlign={window.innerWidth < 900 ? " center" : "start"}
           />
         )}
         <img
@@ -49,14 +69,14 @@ const Info: React.FC<InfoProps> = () => {
               fontSize="small"
               fontWeight="bold"
               color="dark"
-              textAlign="start"
+              textAlign={window.innerWidth < 900 ? " center" : "start"}
             />
             <Content
               text={model.section2.content}
               color="dark"
               fontWeight="regular"
               fontSize="medium"
-              textAlign="start"
+              textAlign={window.innerWidth < 900 ? " center" : "start"}
             />
           </div>
 
@@ -66,14 +86,14 @@ const Info: React.FC<InfoProps> = () => {
               fontSize="small"
               fontWeight="bold"
               color="dark"
-              textAlign="start"
+              textAlign={window.innerWidth < 900 ? " center" : "start"}
             />
             <Content
               text={model.section3.content}
               color="dark"
               fontWeight="regular"
               fontSize="medium"
-              textAlign="start"
+              textAlign={window.innerWidth < 900 ? " center" : "start"}
             />
           </div>
 
@@ -83,14 +103,14 @@ const Info: React.FC<InfoProps> = () => {
               fontSize="small"
               fontWeight="bold"
               color="dark"
-              textAlign="start"
+              textAlign={window.innerWidth < 900 ? " center" : "start"}
             />
             <Content
               text={model.section3.content}
               color="dark"
               fontWeight="regular"
               fontSize="medium"
-              textAlign="start"
+              textAlign={window.innerWidth < 900 ? " center" : "start"}
             />
           </div>
         </div>

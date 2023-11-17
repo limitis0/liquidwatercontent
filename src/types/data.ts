@@ -15,3 +15,10 @@ export interface InfoContent {
     content: string;
   };
 }
+
+export interface PublicationContent {
+  month: string;
+  year: string;
+  title: string;
+  abstract: string;
+}

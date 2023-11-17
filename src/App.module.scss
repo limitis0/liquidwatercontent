@@ -7,3 +7,20 @@
   margin: 120px 0;
   display: flex;
 }
+
+@media screen and (max-width: 1350px) {
+  .App {
+    margin-left: 331px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    margin: 80px 45px 0 45px;
+  }
+  .title {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+  }
+}

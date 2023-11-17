@@ -6,15 +6,12 @@ interface CVProps {}
 
 const CV: React.FC<CVProps> = () => {
   // worker
-  pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    "pdfjs-dist/build/pdf.worker.min.js",
-    import.meta.url
-  ).toString();
+  pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
   return (
     <div className={classes.pdf_viewer}>
       <div style={{ width: "70%" }}>
-        <Document file="https://github.com/limitis0/liquidwatercontent/blob/main/public/sample_pdf.pdf" />
+        <Document file="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" />
       </div>
     </div>
   );

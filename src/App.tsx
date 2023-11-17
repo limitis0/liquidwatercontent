@@ -35,7 +35,7 @@ function App() {
         <Title
           text={renderTitleName()}
           color="dark"
-          fontSize="large"
+          fontSize={window.innerWidth < 900 ? "medium" : "large"}
           fontWeight="bold"
         />
       </div>
